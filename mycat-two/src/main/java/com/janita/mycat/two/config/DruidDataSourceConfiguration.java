@@ -29,7 +29,10 @@ public class DruidDataSourceConfiguration {
     private String password;  
       
     @Value("${spring.datasource.driver-class-name}")
-    private String driverClassName;  
+    private String driverClassName;
+
+    @Value("${spring.datasource.validation-query}")
+    private String validationQuery;
 
     @Bean     //声明其为Bean实例
     @Primary  //在同样的DataSource中，首先使用被标注的DataSource
@@ -40,6 +43,7 @@ public class DruidDataSourceConfiguration {
         datasource.setUsername(username);  
         datasource.setPassword(password);  
         datasource.setDriverClassName(driverClassName);
+        datasource.setValidationQuery(validationQuery);
         logger.info(datasource.toString());
         return datasource;  
     }  
