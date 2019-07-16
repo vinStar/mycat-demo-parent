@@ -10,6 +10,6 @@ mycat对mysql数据库进行分库分表demo
 6. docker 》mysql  `<writeHost host="mycat1" url="127.0.0.1:3306" user="root" password="123456" />` don't use `localhost` for mysql which mean use socket connect in localhost
 
 > [root@bogon mycat]# mysql 
-> ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
 
   
