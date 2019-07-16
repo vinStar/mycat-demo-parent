@@ -11,7 +11,6 @@ mycat对mysql数据库进行分库分表demo
 
 > [root@bogon mycat]# mysql 
 
-
 > ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
 
   
